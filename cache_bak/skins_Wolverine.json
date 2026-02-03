@@ -1,0 +1,68 @@
+{
+  "timestamp": 1770149433.1234336,
+  "payload": [
+    {
+      "name": "Wolverine",
+      "id": "1049001",
+      "url": "https://marvelrivals.fandom.com/wiki/Blood_Berserker",
+      "skinid": "1049300",
+      "skin_name": "Blood Berserker"
+    },
+    {
+      "name": "Wolverine",
+      "id": "1049001",
+      "url": "https://marvelrivals.fandom.com/wiki/Deadpool_%26_Wolverine_(Wolverine)",
+      "skinid": "1049800",
+      "skin_name": "Deadpool & Wolverine"
+    },
+    {
+      "name": "Wolverine",
+      "id": "1049001",
+      "url": "https://marvelrivals.fandom.com/wiki/Dog_Brother_X",
+      "skinid": "1049301",
+      "skin_name": "Dog Brother X"
+    },
+    {
+      "name": "Wolverine",
+      "id": "1049001",
+      "url": "https://marvelrivals.fandom.com/wiki/Patch_(Costume)",
+      "skinid": "1049500",
+      "skin_name": "Patch (Costume)"
+    },
+    {
+      "name": "Wolverine",
+      "id": "1049001",
+      "url": "https://marvelrivals.fandom.com/wiki/Weapon_PhoeniX",
+      "skinid": "1049502",
+      "skin_name": "Weapon PhoeniX"
+    },
+    {
+      "name": "Wolverine",
+      "id": "1049001",
+      "url": "https://marvelrivals.fandom.com/wiki/Weapon_X_(Wolverine)",
+      "skinid": "1049501",
+      "skin_name": "Weapon X"
+    },
+    {
+      "name": "Wolverine",
+      "id": "1049001",
+      "url": "https://marvelrivals.fandom.com/wiki/Winter_Soldier_(Wolverine)",
+      "skinid": "1049503",
+      "skin_name": "Winter Soldier"
+    },
+    {
+      "name": "Wolverine",
+      "id": "1049001",
+      "url": "https://marvelrivals.fandom.com/wiki/Lone_Wolf",
+      "skinid": "1049100",
+      "skin_name": "Lone Wolf"
+    },
+    {
+      "name": "Wolverine",
+      "id": "1049001",
+      "url": "https://marvelrivals.fandom.com/wiki/Wolverine",
+      "skinid": "1049001",
+      "skin_name": "Wolverine (Default)"
+    }
+  ]
+}

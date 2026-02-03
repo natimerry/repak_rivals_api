@@ -1,0 +1,47 @@
+{
+  "timestamp": 1770149090.1599727,
+  "payload": [
+    {
+      "name": "Daredevil",
+      "id": "1055001",
+      "url": "https://marvelrivals.fandom.com/wiki/Devil_2099",
+      "skinid": "1055500",
+      "skin_name": "Devil 2099"
+    },
+    {
+      "name": "Daredevil",
+      "id": "1055001",
+      "url": "https://marvelrivals.fandom.com/wiki/Not_Daredevil",
+      "skinid": "1055501",
+      "skin_name": "Not Daredevil"
+    },
+    {
+      "name": "Daredevil",
+      "id": "1055001",
+      "url": "https://marvelrivals.fandom.com/wiki/Aurora_Twilight",
+      "skinid": "1055102",
+      "skin_name": "Aurora Twilight"
+    },
+    {
+      "name": "Daredevil",
+      "id": "1055001",
+      "url": "https://marvelrivals.fandom.com/wiki/Fearless_Origin",
+      "skinid": "1055100",
+      "skin_name": "Fearless Origin"
+    },
+    {
+      "name": "Daredevil",
+      "id": "1055001",
+      "url": "https://marvelrivals.fandom.com/wiki/Shenloong%27s_Creed",
+      "skinid": "1055101",
+      "skin_name": "Shenloong's Creed"
+    },
+    {
+      "name": "Daredevil",
+      "id": "1055001",
+      "url": "https://marvelrivals.fandom.com/wiki/Daredevil",
+      "skinid": "1055001",
+      "skin_name": "Daredevil (Default)"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "timestamp": 1770149303.7968936,
+  "payload": [
+    {
+      "name": "Rogue",
+      "id": "1065001",
+      "url": "https://marvelrivals.fandom.com/wiki/Savage_South",
+      "skinid": "1065300",
+      "skin_name": "Savage South"
+    },
+    {
+      "name": "Rogue",
+      "id": "1065001",
+      "url": "https://marvelrivals.fandom.com/wiki/Queen%27s_Defense",
+      "skinid": "1065100",
+      "skin_name": "Queen's Defense"
+    },
+    {
+      "name": "Rogue",
+      "id": "1065001",
+      "url": "https://marvelrivals.fandom.com/wiki/Searing_Heart",
+      "skinid": "1065101",
+      "skin_name": "Searing Heart"
+    },
+    {
+      "name": "Rogue",
+      "id": "1065001",
+      "url": "https://marvelrivals.fandom.com/wiki/Rogue",
+      "skinid": "1065001",
+      "skin_name": "Rogue (Default)"
+    }
+  ]
+}

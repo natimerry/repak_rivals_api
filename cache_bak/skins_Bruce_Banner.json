@@ -1,0 +1,47 @@
+{
+  "timestamp": 1770149072.9280455,
+  "payload": [
+    {
+      "name": "Bruce Banner",
+      "id": "1011001",
+      "url": "https://marvelrivals.fandom.com/wiki/Green_Scar",
+      "skinid": "1011501",
+      "skin_name": "Green Scar"
+    },
+    {
+      "name": "Bruce Banner",
+      "id": "1011001",
+      "url": "https://marvelrivals.fandom.com/wiki/Joe_Fixit",
+      "skinid": "1011502",
+      "skin_name": "Joe Fixit"
+    },
+    {
+      "name": "Bruce Banner",
+      "id": "1011001",
+      "url": "https://marvelrivals.fandom.com/wiki/Maestro",
+      "skinid": "1011300",
+      "skin_name": "Maestro"
+    },
+    {
+      "name": "Bruce Banner",
+      "id": "1011001",
+      "url": "https://marvelrivals.fandom.com/wiki/Punk_Rage",
+      "skinid": "1011500",
+      "skin_name": "Punk Rage"
+    },
+    {
+      "name": "Bruce Banner",
+      "id": "1011001",
+      "url": "https://marvelrivals.fandom.com/wiki/Mighty_G-Bomb",
+      "skinid": "1011100",
+      "skin_name": "Mighty G-Bomb"
+    },
+    {
+      "name": "Bruce Banner",
+      "id": "1011001",
+      "url": "https://marvelrivals.fandom.com/wiki/Bruce_Banner",
+      "skinid": "1011001",
+      "skin_name": "Bruce Banner (Default)"
+    }
+  ]
+}

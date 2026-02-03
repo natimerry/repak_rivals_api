@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import List, Optional
 from urllib.parse import urljoin
 
-import requests
+import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
 
 BASE = "https://marvelrivals.fandom.com/wiki"
@@ -14,17 +14,6 @@ HEROES_URL = f"{BASE}/Heroes"
 CACHE_DIR = Path("cache")
 CACHE_TTL_SECONDS = 2 * 60 * 60  # 2 hours
 
-
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (X11; Linux x86_64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/122.0.0.0 Safari/537.36"
-    ),
-    "Accept-Language": "en-US,en;q=0.9",
-    "Accept": "text/html,application/xhtml+xml",
-    "Referer": "https://marvelrivals.fandom.com/",
-}
 
 @dataclass
 class Hero:
@@ -41,15 +30,34 @@ class HeroSkin:
     id: Optional[str]
 
 
+class BrowserSession:
+    """Singleton browser session to reuse driver"""
+    _driver = None
+
+    @classmethod
+    def get_driver(cls):
+        if cls._driver is None:
+            options = uc.ChromeOptions()
+            options.add_argument('--headless=new')
+            options.add_argument('--no-sandbox')
+            options.add_argument('--disable-dev-shm-usage')
+            options.add_argument('--disable-blink-features=AutomationControlled')
+            cls._driver = uc.Chrome(options=options, version_main=None)
+        return cls._driver
+
+    @classmethod
+    def close(cls):
+        if cls._driver:
+            cls._driver.quit()
+            cls._driver = None
+
+
 def get_soup(url: str) -> BeautifulSoup:
-    
-    r = requests.get(
-        url,
-        headers=HEADERS,
-        timeout=10,
-    )
-    r.raise_for_status()
-    return BeautifulSoup(r.text, "html.parser")
+    driver = BrowserSession.get_driver()
+    driver.get(url)
+    time.sleep(2)  # Wait for JS to load
+    html = driver.page_source
+    return BeautifulSoup(html, "html.parser")
 
 
 class Cache:
@@ -76,7 +84,6 @@ class Cache:
             with path.open("r", encoding="utf-8") as f:
                 data = json.load(f)
 
-            # Check if cache is still valid
             age = time.time() - data.get("timestamp", 0)
             if age >= self.ttl:
                 return None
@@ -94,7 +101,6 @@ class Cache:
             json.dump(data, f, indent=2)
 
 
-# Global cache instance
 cache = Cache()
 
 
@@ -123,26 +129,21 @@ def get_heroes() -> List[Hero]:
 
 def extract_skin_id(soup) -> Optional[str]:
     """Extract skin ID from the character table"""
-    # Look for tables with character info
     tables = soup.select(
         "table.char-table-chronology, table.char-table-epic, table.char-table-legendary, table.char-table-rare"
     )
 
     for table in tables:
-        # Find all rows in the table
         rows = table.select("tr")
 
         for row in rows:
-            # Look for a <th> containing "ID NO."
             th_elements = row.select("th")
             for th in th_elements:
                 th_text = th.get_text(strip=True)
                 if "ID NO." in th_text or "ID_NO." in th_text or th_text == "ID NO.":
-                    # Found the ID row - now get the td in the same row
                     td_elements = row.select("td")
                     for td in td_elements:
                         text = td.get_text(strip=True)
-                        # Make sure it's a valid ID (7-8 digits typically)
                         if text.isdigit() and len(text) >= 6:
                             return str(text)
 
@@ -154,7 +155,6 @@ def fetch_hero_skins(hero: Hero) -> List[HeroSkin]:
     soup = get_soup(hero.url)
     skins: List[HeroSkin] = []
 
-    # Find all tab content sections (both Catalog and Recolor tabs)
     tab_contents = soup.select(".wds-tab__content")
 
     for tab_content in tab_contents:
@@ -169,7 +169,6 @@ def fetch_hero_skins(hero: Hero) -> List[HeroSkin]:
 
             href = urljoin(BASE, href)
 
-            # Follow the href to get the skin id
             try:
                 skin_soup = get_soup(href)
                 skin_id = extract_skin_id(skin_soup)
@@ -214,7 +213,6 @@ def get_hero_skins(hero: Hero) -> List[HeroSkin]:
     cache_key = f"skins_{hero.name}"
     cached = cache.get(cache_key)
     if cached:
-        # Reconstruct HeroSkin objects from cached data
         return [
             HeroSkin(
                 base_hero=hero,
@@ -225,7 +223,6 @@ def get_hero_skins(hero: Hero) -> List[HeroSkin]:
             for item in cached
         ]
     skins = fetch_hero_skins(hero)
-    # Cache the skins (without the full hero object to avoid circular refs)
     cache.set(
         cache_key,
         [
@@ -243,11 +240,14 @@ def get_hero_skins(hero: Hero) -> List[HeroSkin]:
 
 
 if __name__ == "__main__":
-    heroes = get_heroes()
-    print(f"Found {len(heroes)} heroes")
+    try:
+        heroes = get_heroes()
+        print(f"Found {len(heroes)} heroes")
 
-    for hero in heroes:
-        print(f"\n{hero.name}:")
-        skins = get_hero_skins(hero)
-        for skin in skins:
-            print(f"  - {skin.name} (ID: {skin.id})")
+        for hero in heroes:
+            print(f"\n{hero.name}:")
+            skins = get_hero_skins(hero)
+            for skin in skins:
+                print(f"  - {skin.name} (ID: {skin.id})")
+    finally:
+        BrowserSession.close()

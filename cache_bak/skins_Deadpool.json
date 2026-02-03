@@ -1,0 +1,33 @@
+{
+  "timestamp": 1770149092.4787326,
+  "payload": [
+    {
+      "name": "Deadpool",
+      "id": "1057001",
+      "url": "https://marvelrivals.fandom.com/wiki/Captain_Pool",
+      "skinid": "1057300",
+      "skin_name": "Captain Pool"
+    },
+    {
+      "name": "Deadpool",
+      "id": "1057001",
+      "url": "https://marvelrivals.fandom.com/wiki/Workwear_Woes",
+      "skinid": "1057101",
+      "skin_name": "Workwear Woes"
+    },
+    {
+      "name": "Deadpool",
+      "id": "1057001",
+      "url": "https://marvelrivals.fandom.com/wiki/X-Force%3F",
+      "skinid": "1057100",
+      "skin_name": "X-Force?"
+    },
+    {
+      "name": "Deadpool",
+      "id": "1057001",
+      "url": "https://marvelrivals.fandom.com/wiki/Deadpool",
+      "skinid": "1057001",
+      "skin_name": "Deadpool (Default)"
+    }
+  ]
+}

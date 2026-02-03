@@ -1,0 +1,47 @@
+{
+  "timestamp": 1770149400.6906843,
+  "payload": [
+    {
+      "name": "Ultron",
+      "id": "1028001",
+      "url": "https://marvelrivals.fandom.com/wiki/Infinity_Ultron",
+      "skinid": "1028800",
+      "skin_name": "Infinity Ultron"
+    },
+    {
+      "name": "Ultron",
+      "id": "1028001",
+      "url": "https://marvelrivals.fandom.com/wiki/Wasteland_Robot",
+      "skinid": "1028300",
+      "skin_name": "Wasteland Robot"
+    },
+    {
+      "name": "Ultron",
+      "id": "1028001",
+      "url": "https://marvelrivals.fandom.com/wiki/X-Tron",
+      "skinid": "1028500",
+      "skin_name": "X-Tron"
+    },
+    {
+      "name": "Ultron",
+      "id": "1028001",
+      "url": "https://marvelrivals.fandom.com/wiki/Golden_Ultron",
+      "skinid": "1028101",
+      "skin_name": "Golden Ultron"
+    },
+    {
+      "name": "Ultron",
+      "id": "1028001",
+      "url": "https://marvelrivals.fandom.com/wiki/Mechanical_Phantom",
+      "skinid": "1028100",
+      "skin_name": "Mechanical Phantom"
+    },
+    {
+      "name": "Ultron",
+      "id": "1028001",
+      "url": "https://marvelrivals.fandom.com/wiki/Ultron",
+      "skinid": "1028001",
+      "skin_name": "Ultron (Default)"
+    }
+  ]
+}

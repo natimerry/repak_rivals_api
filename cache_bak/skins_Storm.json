@@ -1,0 +1,61 @@
+{
+  "timestamp": 1770149360.4787486,
+  "payload": [
+    {
+      "name": "Storm",
+      "id": "1015001",
+      "url": "https://marvelrivals.fandom.com/wiki/Goddess_of_Thunder",
+      "skinid": "1015502",
+      "skin_name": "Goddess of Thunder"
+    },
+    {
+      "name": "Storm",
+      "id": "1015001",
+      "url": "https://marvelrivals.fandom.com/wiki/Mohawk_Rock",
+      "skinid": "1015500",
+      "skin_name": "Mohawk Rock"
+    },
+    {
+      "name": "Storm",
+      "id": "1015001",
+      "url": "https://marvelrivals.fandom.com/wiki/Queen_of_Orphans",
+      "skinid": "1015300",
+      "skin_name": "Queen of Orphans"
+    },
+    {
+      "name": "Storm",
+      "id": "1015001",
+      "url": "https://marvelrivals.fandom.com/wiki/Queen_of_Wakanda",
+      "skinid": "1015504",
+      "skin_name": "Queen of Wakanda"
+    },
+    {
+      "name": "Storm",
+      "id": "1015001",
+      "url": "https://marvelrivals.fandom.com/wiki/Symbiote_Storm",
+      "skinid": "1015503",
+      "skin_name": "Symbiote Storm"
+    },
+    {
+      "name": "Storm",
+      "id": "1015001",
+      "url": "https://marvelrivals.fandom.com/wiki/Ultimate_Wind-Rider",
+      "skinid": "1015501",
+      "skin_name": "Ultimate Wind-Rider"
+    },
+    {
+      "name": "Storm",
+      "id": "1015001",
+      "url": "https://marvelrivals.fandom.com/wiki/Ivory_Breeze",
+      "skinid": "1015100",
+      "skin_name": "Ivory Breeze"
+    },
+    {
+      "name": "Storm",
+      "id": "1015001",
+      "url": "https://marvelrivals.fandom.com/wiki/Storm",
+      "skinid": "1015001",
+      "skin_name": "Storm (Default)"
+    }
+  ]
+}

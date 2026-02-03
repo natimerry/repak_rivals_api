@@ -1,0 +1,61 @@
+{
+  "timestamp": 1770149123.3441138,
+  "payload": [
+    {
+      "name": "Hawkeye",
+      "id": "1021001",
+      "url": "https://marvelrivals.fandom.com/wiki/Ronin_(Hawkeye)",
+      "skinid": "1021500",
+      "skin_name": "Ronin"
+    },
+    {
+      "name": "Hawkeye",
+      "id": "1021001",
+      "url": "https://marvelrivals.fandom.com/wiki/Binary_Arrow",
+      "skinid": "1021502",
+      "skin_name": "Binary Arrow"
+    },
+    {
+      "name": "Hawkeye",
+      "id": "1021001",
+      "url": "https://marvelrivals.fandom.com/wiki/Freefall_(Hawkeye)",
+      "skinid": "1021501",
+      "skin_name": "Freefall"
+    },
+    {
+      "name": "Hawkeye",
+      "id": "1021001",
+      "url": "https://marvelrivals.fandom.com/wiki/Galactic_Fangs",
+      "skinid": "1021300",
+      "skin_name": "Galactic Fangs"
+    },
+    {
+      "name": "Hawkeye",
+      "id": "1021001",
+      "url": "https://marvelrivals.fandom.com/wiki/Old_Man_Hawkeye",
+      "skinid": "1021301",
+      "skin_name": "Old Man Hawkeye"
+    },
+    {
+      "name": "Hawkeye",
+      "id": "1021001",
+      "url": "https://marvelrivals.fandom.com/wiki/Tiger%27s_Eye",
+      "skinid": "1021100",
+      "skin_name": "Tiger's Eye"
+    },
+    {
+      "name": "Hawkeye",
+      "id": "1021001",
+      "url": "https://marvelrivals.fandom.com/wiki/Will_of_Galacta_(Hawkeye)",
+      "skinid": "1021101",
+      "skin_name": "Will of Galacta"
+    },
+    {
+      "name": "Hawkeye",
+      "id": "1021001",
+      "url": "https://marvelrivals.fandom.com/wiki/Hawkeye",
+      "skinid": "1021001",
+      "skin_name": "Hawkeye (Default)"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "timestamp": 1770149273.3229086,
+  "payload": [
+    {
+      "name": "Phoenix",
+      "id": "1054001",
+      "url": "https://marvelrivals.fandom.com/wiki/Chaos_Phoenix",
+      "skinid": "1054300",
+      "skin_name": "Chaos Phoenix"
+    },
+    {
+      "name": "Phoenix",
+      "id": "1054001",
+      "url": "https://marvelrivals.fandom.com/wiki/Ice_Phoenix",
+      "skinid": "1054301",
+      "skin_name": "Ice Phoenix"
+    },
+    {
+      "name": "Phoenix",
+      "id": "1054001",
+      "url": "https://marvelrivals.fandom.com/wiki/Dark_Phoenix",
+      "skinid": "1054500",
+      "skin_name": "Dark Phoenix"
+    },
+    {
+      "name": "Phoenix",
+      "id": "1054001",
+      "url": "https://marvelrivals.fandom.com/wiki/Emerald_Flames",
+      "skinid": "1054101",
+      "skin_name": "Emerald Flames"
+    },
+    {
+      "name": "Phoenix",
+      "id": "1054001",
+      "url": "https://marvelrivals.fandom.com/wiki/The_Return_of_Jean_Grey",
+      "skinid": "1054100",
+      "skin_name": "The Return of Jean Grey"
+    },
+    {
+      "name": "Phoenix",
+      "id": "1054001",
+      "url": "https://marvelrivals.fandom.com/wiki/Will_of_Galacta_(Phoenix)",
+      "skinid": "1054102",
+      "skin_name": "Will of Galacta"
+    },
+    {
+      "name": "Phoenix",
+      "id": "1054001",
+      "url": "https://marvelrivals.fandom.com/wiki/Phoenix",
+      "skinid": "1054001",
+      "skin_name": "Phoenix (Default)"
+    }
+  ]
+}

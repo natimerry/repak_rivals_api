@@ -1,0 +1,33 @@
+{
+  "timestamp": 1770149107.940891,
+  "payload": [
+    {
+      "name": "Gambit",
+      "id": "1058001",
+      "url": "https://marvelrivals.fandom.com/wiki/Thieves_Guildmaster",
+      "skinid": "1058300",
+      "skin_name": "Thieves Guildmaster"
+    },
+    {
+      "name": "Gambit",
+      "id": "1058001",
+      "url": "https://marvelrivals.fandom.com/wiki/Crimson_Heart",
+      "skinid": "1058100",
+      "skin_name": "Crimson Heart"
+    },
+    {
+      "name": "Gambit",
+      "id": "1058001",
+      "url": "https://marvelrivals.fandom.com/wiki/Sacrificial_Pawn",
+      "skinid": "1058101",
+      "skin_name": "Sacrificial Pawn"
+    },
+    {
+      "name": "Gambit",
+      "id": "1058001",
+      "url": "https://marvelrivals.fandom.com/wiki/Gambit",
+      "skinid": "1058001",
+      "skin_name": "Gambit (Default)"
+    }
+  ]
+}
