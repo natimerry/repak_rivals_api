@@ -8,6 +8,9 @@ from urllib.parse import urljoin
 import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
 
+from selenium_stealth import stealth
+
+
 BASE = "https://marvelrivals.fandom.com/wiki"
 HEROES_URL = f"{BASE}/Heroes"
 
@@ -38,10 +41,14 @@ class BrowserSession:
     def get_driver(cls):
         if cls._driver is None:
             options = uc.ChromeOptions()
-            options.add_argument('--headless=new')
+            # options.add_argument('--headless=new')
+            options.page_load_strategy = 'eager'  # Don't wait for images/CSS/ads
             options.add_argument('--no-sandbox')
             options.add_argument('--disable-dev-shm-usage')
             options.add_argument('--disable-blink-features=AutomationControlled')
+            options.add_argument("--enable-features=UseOzonePlatform")
+            options.add_argument("--ozone-platform=wayland")
+
             cls._driver = uc.Chrome(options=options, version_main=None)
         return cls._driver
 
