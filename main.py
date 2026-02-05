@@ -105,6 +105,10 @@ async def shutdown_event():
 def health():
     return {"ok": True}
 
+@app.get("/meshes")
+def get_refresh_status():
+
+    return ["Mesh", "Meshs", "Meshes"]
 
 @app.get("/skins")
 def get_all_skins():
